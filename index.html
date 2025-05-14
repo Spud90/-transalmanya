@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transalmanya - Connecting Talents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Transalmanya</div>
+            <ul class="nav-links">
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Our Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-box" onclick="toggleServiceDetails('service1-details')">
+            <h3>Talent Sourcing</h3>
+            <div id="service1-details" class="service-details">
+                <p>We find the best candidates, ensuring they meet the technical, language, and cultural needs of the German market.</p>
+            </div>
+        </div>
+        <div class="service-box" onclick="toggleServiceDetails('service2-details')">
+            <h3>Partnerships</h3>
+            <div id="service2-details" class="service-details">
+                <p>We collaborate with German recruitment agencies and headhunters to ensure smooth placement processes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Transalmanya is dedicated to helping businesses in Germany connect with highly qualified candidates from Egypt. We focus on building strong partnerships and ensuring that talents match the needs of the German market.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>s
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Transalmanya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
